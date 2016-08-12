@@ -2,7 +2,7 @@
 
 ### Directions
 
-Fork this repo and create a Rails app where I am able to do the following tasks
+Fork this repo and create an app where I am able to do the following tasks
 
 - I want to be able to create an ingredient where I can input a name, description, and a food group (Protein, Vegetable, Fruit, Grain, Dairy)
 - I want to be able to create a recipe where I can input a name, a description, and choose which ingredients go into the recipe.
