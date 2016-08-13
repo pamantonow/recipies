@@ -16,7 +16,6 @@ gem 'coffee-rails', '~> 4.1.0'
 
 #to make the form prettier
 gem 'bootstrap_form'
-
 #see the erros more clear
 gem "better_errors"
 

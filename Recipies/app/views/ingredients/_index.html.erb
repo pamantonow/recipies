@@ -1,0 +1,17 @@
+
+<%= form_tag(ingredients_path, :method => "get", id: "search-form") do %>
+	<%= text_field_tag :search, params[:search], placeholder: "Search ingredients" %>
+	<%= submit_tag "Search" %>
+<% end %>
+
+
+	<%if @ingredients.present? %>
+		<%@ingredients.each do |ingredient| %>
+			<div id="ingredient">
+				<p>Name: <%=ingredient.name%>
+				<p>Description: <%=ingredient.description%>
+				<p>Food Group: <%=ingredient.food_group%>
+					<hr>
+			</div>
+		<% end %> 
+	<% end %>

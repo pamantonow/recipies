@@ -1,0 +1,36 @@
+<div class="new-recipe">
+	<h1> Create Recipes </h1>
+	<%=render partial: "/ingredients/index" %>
+
+	<%=bootstrap_form_for(@recipe)do |f| %>
+  <div class="col-2">
+    <label>
+      <%=f.text_field :name %>
+    </div>
+    </label>
+  <div class="col-2">
+    <label>
+      <%=f.text_area :description %>
+    </label>
+  </div>
+
+  <div class="col-2">
+    <label>
+      <%=f.text_area :instructions %>
+    </label>
+  </div>
+
+  <div class="col-2">
+    <label>
+      <%=f.check_box :vegetarian%>
+    </label>
+  </div>
+   <%= f.collection_select :ingredient_id,Ingredient.all,:id,:name, class: "form-control" %>
+
+   
+
+   <div class="col-submit">
+      <%=f.submit "Create Recipe"%>
+    </div>
+  <% end %> 
+</div>
