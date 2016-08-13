@@ -1,0 +1,26 @@
+<div class="new-ingredients">
+	<h1>Add your new ingredients</h1>
+	<%=bootstrap_form_for(@ingredient) do |f| %>
+		<div class="col-2">
+    	<label>
+      	<%=f.text_field :name %>
+  		</label>
+    </div>
+    <br>
+    <div class="col-2">
+    	<label>
+      	<%=f.text_area :description %>
+    	</label>
+ 		</div>
+ 		<br>
+  	<div class="col-2">
+   		 <label>
+     		 <%=f.select :food_group ,['Grains','Dairy','Protein','Vegetable','Fruit']%>
+    		</label>
+  	 </div>
+
+  	<div class="col-submit">
+      <%=f.submit "Create Recipe"%>
+    </div>
+  <% end %> 
+</div>
