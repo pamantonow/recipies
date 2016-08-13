@@ -31,14 +31,8 @@ class IngredientsController < ApplicationController
   	render :'ingredients/show'
   end
 
-  def edit
-  end
-
-  def update
-  end
-
-  def destroy
-  end
+ 
+  
 
   private
 

@@ -1,0 +1,17 @@
+<h1>Edit your recipes </h1>
+	<%=bootstrap_form_for @recipe,method: :put do |f| %>
+		<div class="col-2">
+    	<label>
+      	<%=f.text_field :name %>
+    	</label>
+  	</div>
+  	<div class="col-2">
+    	<label>
+      <%=f.text_area :description %>
+    	</label>
+  	</div>
+
+  	<div class="col-submit">
+      <%=f.submit "Update Recipe"%>
+    </div>
+  <% end %> 
